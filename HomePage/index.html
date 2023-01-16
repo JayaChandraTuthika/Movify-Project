@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Telugu Movies Online</title>
+    <link rel="stylesheet" href="homepagestyles.css" />
+
+    <link
+      rel="icon"
+      href="https://ik.imagekit.io/93bbofu0i7/Netflix_project/short_videos/ff3fc80f0ee5d27d761296b66c163afa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673429939234"
+    />
+    <script
+      src="https://kit.fontawesome.com/2f975a241a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <div class="netflix-logo-container-nav">
+          <img
+            src="https://ik.imagekit.io/93bbofu0i7/Netflix_project/short_videos/ff3fc80f0ee5d27d761296b66c163afa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673429939234"
+            class="netflix-logo-nav"
+            alt="logo"
+          />
+          <span class="logo-nav-part-text">OVIFY</span>
+        </div>
+        <div class="language-select-container">
+          <i class="fa-solid fa-globe globe-icon"></i>
+          <i class="fa-solid fa-caret-down dropdown-icon"></i>
+          <select class="language-select">
+            <option class="language-option" selected>English</option>
+            <option class="language-option">हिंदी</option>
+            <option class="language-option">తెలుగు</option>
+          </select>
+
+          <button
+            type="button"
+            class="btn signup-button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            id="signUpBtn"
+          >
+            Sign In
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content modal-signup">
+                <div class="model_background"></div>
+                <div class="login-form">
+                  <button
+                    type="button"
+                    class="model-close-button text-white"
+                    id="closeModelBtn1"
+                    data-bs-dismiss="modal"
+                  >
+                    x
+                  </button>
+                  <h1>Sign In</h1>
+                  <label class="label-input-signup" for="emailInputSignupForm"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    class="input-signup-form"
+                    id="emailInputSignupForm"
+                    placeholder="Email"
+                  />
+                  <label
+                    class="label-input-signup"
+                    for="passwordInputSignupForm"
+                    >Password</label
+                  >
+                  <input
+                    type="text"
+                    class="input-signup-form"
+                    id="passwordInputSignupForm"
+                    placeholder="Password"
+                  />
+                  <button class="sign-up-form-sign-btn">SIGN IN</button>
+                  <div class="after-signup-text-container">
+                    <div class="d-flex">
+                      <input type="checkbox" class="remember-checkbox" />
+                      <p class="remember-me-text">Remember me</p>
+                    </div>
+                    <a class="need-help-text">Need Help?</a>
+                  </div>
+                  <div class="mt-3">
+                    <h1 class="final-heading-sign-up">
+                      New to Movify?
+                      <a class="final-heading-sign-up-link">Sign Up Now</a>
+                    </h1>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-content" id="bannerText">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="email-signup">
+          <input
+            type="email"
+            placeholder="Email Address"
+            id="emailInputHeader"
+          />
+          <button type="submit" id="getStartedButton">
+            Get Started
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+        <p class="email-error-text" id="emailErrorMsg"></p>
+      </div>
+    </div>
+    <hr class="separater_line" />
+    <div class="features">
+      <div class="row-section">
+        <div class="text-col">
+          <h2>Enjoy on your TV.</h2>
+          <p>
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+        </div>
+        <div class="img-col">
+          <video class="tv-video-1" autoplay playsinline muted loop>
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+            class="row_image"
+            alt="image2"
+          />
+        </div>
+      </div>
+      <hr class="separater_line" />
+      <div class="row-section">
+        <div class="img-col phone-image row_image">
+          <div class="on-phone-container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+              class="stranger-things-cover"
+            />
+            <div class="on-phone-container-text">
+              <h6>Stranger things</h6>
+              <p>Downloading...</p>
+            </div>
+            <img
+              src="https://ik.imagekit.io/93bbofu0i7/Netflix_project/short_videos/download-icon.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673184078088"
+              class="stranger-things-cover"
+            />
+          </div>
+        </div>
+        <div class="text-col">
+          <h2>Download your shows to watch offline.</h2>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+      </div>
+      <hr class="separater_line" />
+      <div class="row-section">
+        <div class="text-col">
+          <h2>Watch everywhere.</h2>
+          <p>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+        <div class="img-col">
+          <video
+            class="tv-video-2"
+            autoplay
+            playsinline
+            muted
+            loop
+            type="video/mp4"
+          >
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+              type="video/mp4"
+            />
+          </video>
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+            class="row_image"
+            alt="image4"
+          />
+        </div>
+      </div>
+      <hr class="separater_line" />
+      <div class="row-section">
+        <div class="img-col">
+          <img
+            src="https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420"
+            class="row_image"
+            alt="image5"
+          />
+        </div>
+        <div class="text-col">
+          <h2>Create profiles for children.</h2>
+          <p>
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </p>
+        </div>
+      </div>
+      <hr class="separater_line" />
+    </div>
+
+    <div class="faq">
+      <h2>Frequently asked questions</h2>
+      <div id="faq1" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">what is Movify?</p>
+          <div class="expand-faq-button" id="expandFaqButton1">
+            <span id="faqExpandIcon1">+</span
+            ><span class="hide" id="faqCompressIcon1">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded1">
+          Movify is a streaming service that offers a wide variety of
+          award-winning TV shows, movies, anime, documentaries and more – on
+          thousands of internet-connected devices.<br />
+          You can watch as much as you want, whenever you want, without a single
+          ad – all for one low monthly price. There's always something new to
+          discover, and new TV shows and movies are added every week!
+        </p>
+      </div>
+      <div id="faq2" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">How much does Movify cost?</p>
+          <div class="expand-faq-button" id="expandFaqButton2">
+            <span id="faqExpandIcon2">+</span
+            ><span class="hide" id="faqCompressIcon2">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded2">
+          Watch Movify on your smartphone, tablet, Smart TV, laptop, or
+          streaming device, all for one fixed monthly fee. Plans range from ₹
+          149 to ₹ 649 a month. No extra costs, no contracts.
+        </p>
+      </div>
+      <div id="faq3" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">Where can i watch?</p>
+          <div class="expand-faq-button" id="expandFaqButton3">
+            <span id="faqExpandIcon3">+</span
+            ><span class="hide" id="faqCompressIcon3">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded3">
+          Watch anywhere, anytime. Sign in with your Netflix account to watch
+          instantly on the web at netflix.com from your personal computer or on
+          any internet-connected device that offers the Netflix app, including
+          smart TVs, smartphones, tablets, streaming media players and game
+          consoles.
+        </p>
+      </div>
+      <div id="faq4" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">How do i cancel?</p>
+          <div class="expand-faq-button" id="expandFaqButton4">
+            <span id="faqExpandIcon4">+</span
+            ><span class="hide" id="faqCompressIcon4">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded4">
+          Movify is flexible. There are no annoying contracts and no
+          commitments. You can easily cancel your account online in two clicks.
+          There are no cancellation fees – start or stop your account anytime.
+        </p>
+      </div>
+      <div id="faq5" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">What can i watch on Movify?</p>
+          <div class="expand-faq-button" id="expandFaqButton5">
+            <span id="faqExpandIcon5">+</span
+            ><span class="hide" id="faqCompressIcon5">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded5">
+          Movify has an extensive library of feature films, documentaries, TV
+          shows, anime, award-winning Netflix originals, and more. Watch as much
+          as you want, anytime you want.
+        </p>
+      </div>
+      <div id="faq6" class="faq-text-container">
+        <div class="faq-text-container-1">
+          <p class="faq-text">Is Movify Good for kids?</p>
+          <div class="expand-faq-button" id="expandFaqButton6">
+            <span id="faqExpandIcon6">+</span
+            ><span class="hide" id="faqCompressIcon6">x</span>
+          </div>
+        </div>
+        <p class="faq-text-expanded" id="faqTextExpanded6">
+          The Netflix Kids experience is included in your membership to give
+          parents control while kids enjoy family-friendly TV shows and films in
+          their own space. Kids profiles come with PIN-protected parental
+          controls that let you restrict the maturity rating of content kids can
+          watch and block specific titles you don’t want kids to see.
+        </p>
+      </div>
+    </div>
+
+    <div class="new">
+      <h3>
+        Ready to watch? Enter your email to create or restart your membership.
+      </h3>
+      <div class="ok">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started</button>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Qustions?Call 000-000-000</p>
+      <div class="row">
+        <div class="cool">
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+        <div class="cool">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs</a>
+          <a href="#">Cookie Perferences</a>
+          <a href="#">Legal Notice</a>
+        </div>
+        <div class="cool">
+          <a href="#">Account</a>
+          <a href="#">Ways To Watch</a>
+          <a href="#">Corparate Information</a>
+          <a href="#">Only On Netflix</a>
+        </div>
+        <div class="cool">
+          <a href="#">Media Center</a>
+          <a href="#">Terms Of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-language-select-container">
+        <i class="fa-solid fa-globe laguage-icon-globe"></i>
+        <select class="language-select-footer">
+          <option class="language-option" selected>English</option>
+          <option class="language-option">हिंदी</option>
+          <option class="language-option">తెలుగు</option>
+        </select>
+        <i class="fa-solid fa-caret-down laguage-icon-down-arraow"></i>
+      </div>
+
+      <p class="copy-rights-text">
+        &copy; Created by Jayachandra with bootstrap and JavaScript
+      </p>
+
+      <script src="HomeScripts"></script>
+    </div>
+  </body>
+</html>
